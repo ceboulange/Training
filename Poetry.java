@@ -14,12 +14,11 @@ public class Poetry{
 		String pattern = "";
         
         //Get last word
-        Matcher m = Pattern.compile("\\b([a-zA-Z]+)*$").matcher(line);
+        Matcher m = Pattern.compile("([a-zA-Z]+)$").matcher(line);
         
         //Get pattern
         if(m.find()){
         	String word = m.group(1);
-        	
         	boolean vowelFound = false;
         	int patternStart = 0;
         	int maxChar = word.length()-1;
