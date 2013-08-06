@@ -3,9 +3,12 @@ import java.util.regex.*;
 import static java.lang.System.*;
 
 public class Poetry{
+//Here I try to find the rhyme pattern of a poem given in input
+//Poems are supposed to be string array where one line is one element
+
    public static void main(String [] args)
 	{
-		String[] poem = {" wehe light","dssf fight","trdfsz","efwee","df dfdwf corner","aglyory","ad might","edew memyory"};
+		String[] poem = {"test wehe light","dssf fight","trdfsz","efwee","df dfdwf corner","aglyory","ad might","edew memyory"};
 		String res = rhymeScheme(poem);
 		out.println("rhyme scheme = " + res);
 	}
